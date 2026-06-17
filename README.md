@@ -85,3 +85,21 @@ Rainfall = 200 mm
 
 Output:
                  Recommended Crop: Rice 🌾
+
+2️⃣ Crop Disease Detection
+
+Farmers upload an image of a crop leaf.
+The AI model analyzes the image and identifies diseases instantly.
+
+Workflow
+
+Upload Leaf Image
+        ↓
+Image Processing
+        ↓
+TensorFlow Lite Model
+        ↓
+Disease Prediction
+        ↓
+Result Displayed
+
