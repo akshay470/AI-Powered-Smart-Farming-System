@@ -103,3 +103,44 @@ Disease Prediction
         ↓
 Result Displayed
 
+3️⃣ Yield Prediction
+
+Predicts future crop production based on agricultural parameters.
+
+Input Parameters
+Soil Quality
+Rainfall
+Farm Area
+Fertilizer Usage
+Environmental Conditions
+Output
+Expected Yield:
+5.8 Tons/Hectare
+
+This enables farmers to:
+
+Estimate profits
+Plan harvesting
+Manage resources efficiently
+4️⃣ AI Agriculture Assistant (RAG Chatbot)
+
+An intelligent assistant capable of answering farming-related questions.
+
+Users can upload:
+
+PDFs
+Research Papers
+Agricultural Documents
+
+and ask questions directly from those documents.
+
+Example
+
+Question:
+
+How can Rice Blast disease be prevented?
+
+AI Response:
+
+Rice Blast disease can be controlled by maintaining proper
+water management and using resistant crop varieties.
