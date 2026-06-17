@@ -144,3 +144,346 @@ AI Response:
 
 Rice Blast disease can be controlled by maintaining proper
 water management and using resistant crop varieties.
+
+
+## 🏗 System Architecture
+
+```mermaid
+flowchart TD
+    A[Farmer / User] --> B[React Frontend Interface]
+    B --> C[FastAPI Backend]
+
+    C --> D[Crop Recommendation]
+    C --> E[Disease Detection]
+    C --> F[Yield Prediction]
+
+    D --> G[ML Model]
+    E --> H[TensorFlow Lite Model]
+    F --> I[ML Model]
+
+    G --> J[Prediction Results]
+    H --> J
+    I --> J
+
+    J --> K[RAG AI Assistant]
+    K --> L[LangChain + Gemini + FAISS]
+```
+
+🛠 Technology Stack
+Frontend Technologies
+⚛️ React
+
+React is used to create the user interface.
+
+Responsibilities:
+
+Building pages
+Creating forms
+Displaying prediction results
+Managing UI components
+
+Benefits:
+
+Fast rendering
+Component-based architecture
+Reusable code
+⚡ Vite
+
+Used for modern frontend development.
+
+Benefits:
+
+Faster startup
+Instant hot reloading
+Better development experience
+🌐 React Router
+
+Handles navigation between pages.
+
+Example:
+
+Home
+ ↓
+Crop Recommendation
+ ↓
+Disease Detection
+ ↓
+Yield Prediction
+ ↓
+AI Assistant
+📡 Axios
+
+Allows communication between frontend and backend.
+
+Example:
+
+Frontend → API Request → FastAPI
+Backend Technologies
+🚀 FastAPI
+
+Main backend framework.
+
+Responsibilities:
+
+Handling API requests
+Running machine learning models
+Returning prediction results
+
+Why FastAPI?
+
+High performance
+Easy API development
+Built-in documentation
+🐍 Python
+
+Core programming language.
+
+Used for:
+
+Machine Learning
+AI Processing
+Data Analysis
+Backend Logic
+Machine Learning Technologies
+🧠 Crop Recommendation Model
+
+Predicts the best crop based on environmental factors.
+
+Inputs
+NPK Values
+Temperature
+Humidity
+Rainfall
+pH
+Output
+Best Crop
+📊 Yield Prediction Model
+
+Uses historical agricultural data to estimate production.
+
+Benefits:
+
+Production planning
+Resource management
+Profit estimation
+Deep Learning Technologies
+🔍 TensorFlow Lite
+
+Used for disease detection.
+
+Why TensorFlow Lite?
+Lightweight
+Fast inference
+Suitable for deployment
+Functionality
+Leaf Image
+    ↓
+Image Preprocessing
+    ↓
+TensorFlow Lite Model
+    ↓
+Disease Classification
+Generative AI Technologies
+🤖 Google Gemini
+
+Large Language Model used for intelligent responses.
+
+Responsibilities:
+
+Understanding questions
+Generating answers
+Providing agricultural guidance
+🔗 LangChain
+
+Framework for building AI applications.
+
+Responsibilities:
+
+Connecting Gemini with documents
+Managing retrieval pipelines
+Creating conversational workflows
+🗄 FAISS
+
+Vector database developed by Meta.
+
+Responsibilities:
+
+Storing document embeddings
+Fast similarity search
+Information retrieval
+How the RAG System Works
+Step 1
+
+Upload PDF
+
+Agriculture_Guide.pdf
+Step 2
+
+Document Chunking
+
+Large document is divided into smaller sections.
+
+Step 3
+
+Embedding Generation
+
+Each chunk is converted into vector representations.
+
+Step 4
+
+Store in FAISS
+
+Vectors are stored for efficient searching.
+
+Step 5
+
+User Question
+
+How to prevent wheat rust?
+Step 6
+
+Relevant Information Retrieved
+
+Most relevant document chunks are fetched.
+
+Step 7
+
+Gemini Generates Final Answer
+
+Based on retrieved knowledge.
+
+📂 Project Modules
+Module 1: Crop Recommendation
+
+Purpose:
+
+Recommend optimal crops for cultivation.
+
+Technology:
+
+Machine Learning
+FastAPI
+React
+Module 2: Disease Detection
+
+Purpose:
+
+Detect diseases from crop leaf images.
+
+Technology:
+
+TensorFlow Lite
+Image Processing
+Deep Learning
+Module 3: Yield Prediction
+
+Purpose:
+
+Estimate agricultural productivity.
+
+Technology:
+
+Machine Learning
+Data Analytics
+Module 4: AI Assistant
+
+Purpose:
+
+Provide document-based agricultural guidance.
+
+Technology:
+
+LangChain
+Gemini
+FAISS
+RAG
+🌟 Key Features
+Smart Crop Recommendation
+
+✔ Soil-aware recommendations
+✔ Climate-based analysis
+✔ Instant predictions
+
+Disease Detection
+
+✔ Upload leaf images
+✔ AI-powered diagnosis
+✔ Early disease identification
+
+Yield Prediction
+
+✔ Production forecasting
+✔ Better planning
+✔ Resource optimization
+
+AI Agriculture Assistant
+
+✔ Natural language interaction
+✔ PDF-based Q&
+✔ Expert-like responses
+
+📈 Future Enhancements
+Weather Integration
+
+Real-time weather forecasting APIs.
+
+IoT Sensor Support
+
+Live data from:
+
+Soil sensors
+Temperature sensors
+Humidity sensors
+Mobile Application
+
+Android and iOS support.
+
+Multilingual Support
+
+Support for:
+
+Hindi
+Marathi
+Bengali
+Tamil
+Telugu
+Drone Integration
+
+Automated crop monitoring through drones.
+
+🎓 Learning Outcomes
+
+Through this project, developers gain practical experience in:
+
+Full Stack Development
+React Development
+FastAPI Development
+Machine Learning Deployment
+Deep Learning Applications
+Computer Vision
+Generative AI
+Retrieval-Augmented Generation (RAG)
+Vector Databases
+API Integration
+🏆 Conclusion
+
+Smart Farming AI Platform demonstrates how Artificial Intelligence can transform traditional agriculture into a data-driven and intelligent ecosystem.
+
+By combining:
+
+Machine Learning
+Deep Learning
+Computer Vision
+Generative AI
+Modern Web Development
+
+the platform provides farmers with powerful tools to improve productivity, reduce losses, and make informed decisions.
+
+The project serves as an excellent example of how technology can create meaningful social impact while solving real-world agricultural challenges.
+
+👨‍💻 Developed With
+
+React • FastAPI • Python • TensorFlow Lite • LangChain • Gemini • FAISS • Machine Learning • Generative AI
+
+🌱 "Smarter Decisions Today, Better Harvests Tomorrow." 🌱
+
