@@ -415,18 +415,15 @@ Yield Prediction
 ✔ Production forecasting
 ✔ Better planning
 ✔ Resource optimization
-
 AI Agriculture Assistant
 
 ✔ Natural language interaction
-✔ PDF-based Q&
+✔ PDF-based Q&A
 ✔ Expert-like responses
 
 📈 Future Enhancements
 Weather Integration
-
 Real-time weather forecasting APIs.
-
 IoT Sensor Support
 
 Live data from:
