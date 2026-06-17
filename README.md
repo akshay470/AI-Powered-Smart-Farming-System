@@ -72,3 +72,16 @@ Temperature
 Humidity
 Soil pH
 Rainfall
+
+Example
+Input:
+Nitrogen = 90
+Phosphorus = 42
+Potassium = 43
+Temperature = 26°C
+Humidity = 80%
+pH = 6.5
+Rainfall = 200 mm
+
+Output:
+                 Recommended Crop: Rice 🌾
